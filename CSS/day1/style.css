@@ -1,0 +1,29 @@
+/* external css */
+/* Text Properties : font-family, font-size, font-weight,
+ text-align, line-height, letter-spacing, word-spacing,
+  text-decoration, font-style, text- transform, text-indent, color, list-style */
+.para {
+  background-color: yellow;
+  font-family: fantasy;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 45px;
+  word-spacing: 10px;
+  text-decoration: line-through;
+  text-decoration: underline;
+  text-decoration: overline;
+  font-style: italic;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  /* text indent to give space in paragraph in start point */
+  text-indent: 20px;
+}
+.align{
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+ul{
+  list-style: circle;
+}

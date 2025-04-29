@@ -1,0 +1,58 @@
+<!-- 
+ Introduction Of CSS
+CSS Type : External CSS ,internal CSS , inline CSS
+Font Attachment : online
+Text Properties : font-family, font-size, font-weight,
+ text-align, line-height, letter-spacing, word-spacing,
+  text-decoration, font-style, text- transform, text-indent, color, list-style
+CSS Apply : <tag>, .class, #id -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- inline > internal > external css -->
+    <style>
+      /* priority  id > class > tag name */
+      .head-3 {
+        background-color: blue;
+      }
+      span {
+        background-color: rgb(140, 51, 118);
+      }
+      #text {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline css -->
+    <p style="color: #c31a1a">
+      CSS :Cascading Style Sheets is a style sheet language used for specifying
+      the presentation and styling of a document written in a markup language
+      such as HTML or XML.
+    </p>
+    <!-- internal css -->
+    <!-- by tagname we provide css -->
+    <span>heading 2</span>
+
+    <!-- by class name we provide css -->
+    <span class="head-3">heading 3</span>
+    <span id="text" class="head-3">heading 4</span>
+    <p class="para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, impedit
+      alias? Unde, quod ad totam officiis ea aut nemo dolor sunt repudiandae
+      tenetur. Facere, hic aspernatur libero maiores laboriosam saepe.
+    </p>
+    <p class="align">text align</p>
+
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+  </body>
+</html>
