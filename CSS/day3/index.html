@@ -1,0 +1,88 @@
+<!-- 
+ BackgroundImage, size, repeat, position, attachment
+Types Of Gradient : Linear, Radial, Conic
+Two class Property , Parent-child Property
+Ex : Create Parallax Scrolling Effect -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .card {
+        background-image: url("./image.jpeg");
+        height: 700px;
+        width: 400px;
+        background-repeat: no-repeat;
+        /* background-repeat: repeat-x;
+        background-repeat: repeat-y; */
+        border: 1px solid black;
+        background-size: contain;
+        background-size: cover;
+        background-position: right;
+      }
+      .card-2 {
+        background-attachment: fixed;
+        background-attachment: scroll;
+        background-image: url("Designer.jpeg");
+        background-size: contain;
+        border: 1px solid rgb(83, 205, 230);
+        height: 300px;
+        width: 300px;
+      }
+      .progress-bar {
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        background: linear-gradient(red, blue, green, yellow, purple);
+        background: radial-gradient(red, blue, green, yellow, purple);
+        background: conic-gradient(red, blue, green, yellow, purple);
+        background: radial-gradient(
+          circle,
+          rgba(63, 94, 251, 1) 0%,
+          rgba(252, 70, 107, 1) 100%
+        );
+        background: linear-gradient(
+          59deg,
+          rgba(226, 174, 238, 1) 28%,
+          rgba(171, 176, 33, 1) 100%
+        );
+        border-radius: 0% 100% 31% 69% / 0% 70% 30% 100% ;
+      }
+      .container {
+        height: 500px;
+        width: 80%;
+        border: 2px solid black;
+      }
+      .box{
+        height: 200px;
+        width: 200px;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-2"></div>
+    <div class="card">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        corporis voluptatem at debitis dicta aut dolore, totam libero voluptate
+        adipisci repellat perspiciatis deleniti provident ipsam, expedita
+        molestiae dolores consequatur ratione.
+      </p>
+    </div>
+
+    <div class="progress-bar"></div>
+
+    <div class="container">
+     <div class="box"></div>
+     <div class="box"></div>
+    </div>
+  </body>
+</html>
