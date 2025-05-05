@@ -1,0 +1,75 @@
+<!-- 
+ 
+Position: relative, absolute, z-index 
+Transform Property : translate, rotate, scale, skew
+Ex : All Property Practice & Create Login Form With Using-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 500px;
+        width: 500px;
+        background-color: greenyellow;
+        position: relative;
+        left: 50px;
+      }
+      .inner-cont {
+        height: 400px;
+        width: 400px;
+
+        background-color: rgb(207, 220, 23);
+        z-index: -3;
+        position: relative;
+        transform: rotate(65deg);
+        left: 200px;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+
+        background-color: red;
+        /* absolute behaviour depends on postion relative */
+        position: absolute;
+        /* top: ;left: ;right: ;bottom: ; when i apply positions then i can use this css property  */
+
+        right: -50px;
+        bottom: 50px;
+        transform: rotate(65deg);
+        transform: scale(0.6);
+        translate: 10% 20%;
+      }
+
+      .box1 {
+        height: 100px;
+        width: 100px;
+
+        background-color: red;
+        transition: 3s;
+      }
+      .box1:hover {
+        transition: 3s;
+        transform: skew(555deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-cont"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="box1"></div>
+  </body>
+</html>
