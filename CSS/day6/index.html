@@ -1,0 +1,59 @@
+<!-- 
+ Hover & Focus
+Transition Property : duration, timing-function, delay, property
+Ex : Create Button & Icon Hover Effect
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .btn {
+        width: 140px;
+        height: 70px;
+        font-size: 25px;
+        border-radius: 10px;
+        background-color: aqua;
+        border: none;
+        margin-top: 25px;
+        margin-left: 25px;
+        transition: 3.5s;
+      }
+
+      .btn:hover {
+        background-color: red;
+        color: white;
+        height: 50px;
+        width: 100px;
+        font-size: 15px;
+        transform: rotate(1200deg);
+      }
+      .text {
+        height: 70px;
+        margin-top: 25px;
+        width: 400px;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 2s;
+      }
+      .text:focus {
+        outline: none;
+       border: 2px solid blue;
+        color: rgb(0, 128, 128);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Click me</button>
+    <br />
+    <input class="text" type="text" placeholder="enter your name" />
+  </body>
+</html>
